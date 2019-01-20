@@ -4,10 +4,8 @@
   */
 
 #pragma once
-
-#include <stdint.h>
-
-#pragma push(pack, 1)
+#include "warning_push.h"
+#include "pragma_push.h"
 
 typedef struct {
 	uint32_t time; //Time of execution
@@ -57,4 +55,5 @@ typedef struct {
 	//ecl06_thrins_t thread_ins[]; //Timeline instructions
 } ecl08_t; //this ECL format is just ecl07_t with a magic number on it
 
-#pragma pop(pack)
+#include "pragma_pop.h"
+#include "warning_pop.h"
